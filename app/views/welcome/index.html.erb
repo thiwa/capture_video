@@ -1,0 +1,36 @@
+<h1>Video Capturing test</h1>
+
+
+<% content_for :body do %>
+<!--<div data-role="page" id="page1"> -->
+        <div data-role="header" data-position="fixed">
+        <h3>Capture video</h3>   
+      </div>
+
+
+    <div data-role="content">
+        <%= link_to "Capture video", "", "data-role"=>"button"%>
+        <%= link_to 'Upload', {:controller => "welcome", :action => "index"}, "data-role" => "button" %>
+    </div>
+   
+      <div class="ui-bar" data-theme="a" data-role="footer" data-position="fixed">
+
+    </div>
+<!--</div> -->
+<% end %>
+
+<% content_for :footer do %>
+      <div data-role="controlgroup" data-type="horizontal">
+       
+              <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                          Step 1
+                      </a>
+           
+              <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                          Step 2
+              </a>    
+      </div>
+<% end %>
+
+
+
